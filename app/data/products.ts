@@ -50,6 +50,22 @@ export const products = [
     ]
   },
   {
+    id: 4,
+    name: "Roesys X-Twin Digital",
+    category: "Radiologie",
+    brand: "Roesys",
+    price: null,
+    currency: "EUR",
+    image: "https://numeris.ro/wp-content/uploads/2021/06/Sistem-Digital-de-RadiologieFluoroscopie-X-Twin-RoeSys-Germania.jpg", 
+    stock: false,
+    badge: "Made in Germany",
+    description: "Sistem radiologic digital direct (DR) cu detector wireless și doză redusă de radiații.",
+    specs: [
+        { label: "Putere", value: "50kW / 65kW" },
+        { label: "Detector", value: "CsI Wireless" }
+    ]
+  },
+  {
     id: 5,
     name: "Ecograf Portabil VINNO 6",
     category: "Ecografe",
