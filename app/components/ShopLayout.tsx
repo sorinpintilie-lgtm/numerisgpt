@@ -143,8 +143,8 @@ export default function ShopLayout() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProducts.map((product) => (
                 <div key={product.id} className="bg-white border border-slate-200 rounded-xl overflow-hidden hover:shadow-xl hover:border-numeris/50 transition-all duration-300 group flex flex-col h-full">
-                  <Link href={`/products/${product.id}`} className="relative aspect-[4/3] bg-white p-6 border-b border-slate-50 cursor-pointer grid place-items-center">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-contain object-center block" />
+                  <Link href={`/products/${product.id}`} className="relative aspect-[4/3] bg-white p-6 border-b border-slate-50 cursor-pointer grid place-items-center text-center">
+                    <img src={product.image} alt={product.name} className="block w-full h-full object-contain object-center mx-auto origin-center" />
                   </Link>
                   <div className="p-5 flex flex-col flex-1">
                     <div className="text-xs text-slate-500 font-medium mb-1">{product.category}</div>
