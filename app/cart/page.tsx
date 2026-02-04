@@ -5,6 +5,9 @@ import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
 import { useCart } from '@/app/context/CartContext';
 
+// Consistent number formatting for Romanian locale
+const formatPrice = (num: number) => num.toLocaleString('ro-RO');
+
 export default function CartPage() {
   const { cart, removeFromCart, updateQuantity } = useCart();
 
@@ -70,7 +73,7 @@ export default function CartPage() {
 
                     {/* Line Total */}
                     <div className="text-right sm:w-28">
-                      <div className="font-bold text-slate-900 text-lg">{(item.price * item.quantity).toLocaleString()} <span className="text-xs">RON</span></div>
+                      <div className="font-bold text-slate-900 text-lg">{formatPrice(item.price * item.quantity)} <span className="text-xs">RON</span></div>
                     </div>
                   </div>
 
