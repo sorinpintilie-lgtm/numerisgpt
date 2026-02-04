@@ -50,10 +50,12 @@ export default function ProductGrid() {
               </div>
 
               {/* Product Image */}
-              <div className="aspect-[4/3] bg-slate-50 rounded-xl mb-6 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-slate-300">
-                   [Imagine {product.name}]
-                </div>
+              <div className="aspect-[4/3] bg-slate-50 rounded-xl mb-6 relative overflow-hidden flex items-center justify-center">
+                <img 
+                  src={product.image} 
+                  alt={product.name}
+                  className="w-full h-full object-contain p-4"
+                />
                 {/* Overlay on Hover */}
                 <div className="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/5 transition-colors duration-300"></div>
               </div>

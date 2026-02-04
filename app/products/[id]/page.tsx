@@ -47,8 +47,8 @@ export default function ProductPage() {
           <div className="grid lg:grid-cols-2 gap-0">
             
             {/* Image */}
-            <div className="p-8 border-b lg:border-b-0 lg:border-r border-slate-100 flex items-center justify-center">
-              <img src={product.image} alt={product.name} className="max-h-[500px] object-contain" />
+            <div className="p-6 lg:p-8 border-b lg:border-b-0 lg:border-r border-slate-100 flex items-center justify-center min-h-[300px] lg:min-h-[500px]">
+              <img src={product.image} alt={product.name} className="max-h-[250px] lg:max-h-[500px] w-auto object-contain" />
             </div>
 
             {/* Info */}
